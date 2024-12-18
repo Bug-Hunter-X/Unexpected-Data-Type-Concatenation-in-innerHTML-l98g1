@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    //Correct use of innerHTML
+    document.getElementById("myDiv").innerHTML = "<p>This is a paragraph.</p>" + String(5); 
+    //Alternatively, build string carefully
+    //document.getElementById("myDiv").innerHTML = `<p>This is a paragraph. ${5}</p>`;
+  </script>
+</body>
+</html>
